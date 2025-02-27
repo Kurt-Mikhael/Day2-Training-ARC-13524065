@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 const ratingProduk = document.createElement('p');
                 ratingProduk.className = 'rating';
                 ratingProduk.innerHTML = `⭐ ${produk.rating}`; // Tambahin simbol bintang
-
+                // Tinggal tambahin-tambahin semua element ke kartu produk
                 kartuProduk.appendChild(gambarProduk);
                 kartuProduk.appendChild(namaProduk);
                 kartuProduk.appendChild(deskripsiProduk);
                 kartuProduk.appendChild(containerHarga);
                 kartuProduk.appendChild(ratingProduk);
-
+                //Kartu produk masukin ke daftar produk
                 daftarProdukElement.appendChild(kartuProduk);
             });
         })
