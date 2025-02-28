@@ -1,0 +1,114 @@
+@keyframes hoverUpandDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.kontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    animation: hoverUpandDown 5s infinite;
+}
+
+.daftar-produk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.kartu-produk {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.kartu-produk:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.label-diskon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4757;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.kartu-produk img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.kartu-produk h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.kartu-produk p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Container untuk harga */
+.container-harga {
+    margin: 10px 0;
+}
+
+.harga-normal {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.harga-asli {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.harga-diskon {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.rating {
+    font-size: 14px;
+    color: #f39c12;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
